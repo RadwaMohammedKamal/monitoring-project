@@ -1,5 +1,3 @@
----
-
 ## Monitoring Architecture
 
 - **Node Exporter**: collects CPU, RAM, and system metrics from the VM.
@@ -15,14 +13,3 @@
 | Alertmanager    | Podman    | 9093       |
 | Grafana         | Podman    | 3000       |
 | Node Exporter   | Podman    | 9100       |
-
----
-
-## Inventory
-
-`inventory/hosts`:
-
-```ini
-[monitoring]
-localhost ansible_connection=local
-
