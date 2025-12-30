@@ -1,0 +1,7 @@
+- name: Install Node Exporter
+  hosts: monitoring
+  become: true
+
+  roles:
+    - node_exporter
+

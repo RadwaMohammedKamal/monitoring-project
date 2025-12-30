@@ -1,0 +1,8 @@
+- name: Run Node Exporter container
+  containers.podman.podman_container:
+    name: node_exporter
+    image: quay.io/prometheus/node-exporter
+    state: started
+    restart_policy: always
+    network: host
+
